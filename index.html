@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FC Barcelona 25/26 - Práctica DIW</title>
+    <script type="module" src="/main.js"></script>
+  </head>
+  
+  <body class="antialiased font-barca bg-gray-50 text-gray-900">
+
+    <header class="fixed top-0 left-0 w-full bg-barca-dark/95 backdrop-blur-sm text-white z-50 shadow-md">
+      <nav class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+        
+        <div class="flex items-center gap-2">
+            <img src="/escudosi.png" alt="Escudo Barça" class="h-12 w-auto">
+            <span class="font-black text-xl tracking-wider">BARÇA 25/26</span>
+        </div>
+        
+        <ul class="hidden md:flex gap-8 font-bold text-sm uppercase tracking-wide">
+          <li class="hover:text-barca-gold transition-colors cursor-pointer">Entradas</li>
+          <li class="hover:text-barca-gold transition-colors cursor-pointer">Barça One</li>
+          <li class="hover:text-barca-gold transition-colors cursor-pointer">Tienda</li>
+        </ul>
+
+        <button class="hidden md:block bg-barca-gold text-barca-blue px-5 py-2 rounded-full font-bold hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg">
+          Soy Socio
+        </button>
+
+        <button id="menu-btn" class="md:hidden text-2xl p-2 cursor-pointer">☰</button>
+      </nav>
+
+      <div id="mobile-menu" class="hidden absolute top-[60px] left-0 w-full bg-barca-dark border-t border-gray-800 shadow-xl flex-col p-4 gap-4 md:hidden">
+        <a href="#" class="block text-white hover:text-barca-gold font-bold py-2 border-b border-gray-700">Entradas</a>
+        <a href="#" class="block text-white hover:text-barca-gold font-bold py-2 border-b border-gray-700">Barça One</a>
+        <a href="#" class="block text-white hover:text-barca-gold font-bold py-2 border-b border-gray-700">Tienda</a>
+        <button class="w-full bg-barca-gold text-barca-blue py-3 rounded-lg font-black mt-2">
+            SOY SOCIO
+        </button>
+      </div>
+    </header>
+
+    <section class="relative min-h-screen flex items-center justify-center text-center px-4 pt-16 bg-hero-pattern bg-cover bg-center bg-fixed">
+      
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <div class="relative z-10 max-w-4xl">
+        <span class="block text-barca-gold font-bold tracking-[0.3em] mb-4 animate-pulse">TEMPORADA 25/26</span>
+        
+        <h1 class="text-5xl md:text-7xl lg:text-9xl font-black text-white mb-6 drop-shadow-xl leading-none">
+          SOM-HI <br> 
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-barca-gold to-yellow-200">TOT EL CAMP</span>
+        </h1>
+        
+        <p class="text-gray-100 text-lg md:text-2xl mb-8 max-w-2xl mx-auto font-medium drop-shadow-md">
+          Vive la nueva era de Flick. Disfruta de Lamine Yamal y el regreso al Spotify Camp Nou.
+        </p>
+        
+        <div class="flex flex-col md:flex-row gap-4 justify-center">
+          <button class="bg-barca-grana text-white px-8 py-4 rounded-lg font-bold text-lg shadow-xl hover:bg-red-700 hover:-translate-y-1 transition-transform">
+            Hazte Socio
+          </button>
+          <button class="bg-white text-barca-blue px-8 py-4 rounded-lg font-bold text-lg shadow-xl hover:bg-gray-100 hover:-translate-y-1 transition-transform">
+            Ver Calendario
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-900 text-white py-12 border-b-4 border-barca-gold">
+      <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8">
+        
+        <div class="flex items-center gap-4 w-full justify-center md:justify-end">
+          <div class="text-center md:text-right">
+            <h3 class="text-2xl font-bold">FC Barcelona</h3>
+            <p class="text-gray-400 text-sm">1º en La Liga</p>
+          </div>
+          <img src="/escudosi.png" alt="Escudo Barça" class="h-24 w-auto">
+        </div>
+
+        <div class="text-center bg-gray-800 px-10 py-6 rounded-2xl shadow-inner border border-gray-700 w-full md:w-auto">
+          <span class="text-barca-gold font-bold text-xs tracking-widest">PRÓXIMO PARTIDO</span>
+          <div class="text-4xl font-black my-2 font-mono">16:15</div>
+          <p class="text-gray-400 text-sm mb-3">Dom, 10 Mayo - Camp Nou</p>
+          <button class="bg-barca-gold text-barca-dark text-xs font-black px-6 py-2 rounded uppercase hover:bg-white transition-colors">
+            Comprar Entradas
+          </button>
+        </div>
+
+        <div class="flex items-center gap-4 w-full justify-center md:justify-start">
+          <img src="/trampas.png" alt="trampas" class="h-24 w-auto">
+          <div class="text-center md:text-left">
+            <h3 class="text-2xl font-bold">Real Madrid</h3>
+            <p class="text-gray-400 text-sm">2º en La Liga</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 px-4 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-black text-barca-blue mb-12 text-center uppercase tracking-tighter">
+          Las Estrellas <span class="text-barca-grana">25/26</span>
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="group relative h-[450px] rounded-2xl overflow-hidden cursor-pointer shadow-xl bg-gray-100">
+            <img src="/lamine2.jpeg" alt="Lamine" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-barca-blue/90 via-transparent to-transparent flex flex-col justify-end p-6">
+              <span class="text-barca-gold font-bold text-7xl opacity-80 absolute top-4 right-4 italic">10</span>
+              <h3 class="text-white text-3xl font-black uppercase italic translate-y-2 group-hover:translate-y-0 transition-transform">Lamine</h3>
+              <p class="text-gray-300 font-bold text-sm mb-4">DELANTERO</p>
+            </div>
+          </div>
+
+          <div class="group relative h-[450px] rounded-2xl overflow-hidden cursor-pointer shadow-xl bg-gray-100">
+            <img src="/pedri2.jpeg" alt="Pedri" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-barca-grana/90 via-transparent to-transparent flex flex-col justify-end p-6">
+              <span class="text-barca-gold font-bold text-7xl opacity-80 absolute top-4 right-4 italic">8</span>
+              <h3 class="text-white text-3xl font-black uppercase italic translate-y-2 group-hover:translate-y-0 transition-transform">Pedri</h3>
+              <p class="text-gray-300 font-bold text-sm mb-4">MEDIOCENTRO</p>
+            </div>
+          </div>
+
+          <div class="group relative h-[450px] rounded-2xl overflow-hidden cursor-pointer shadow-xl bg-gray-100">
+            <img src="/eric.jpeg" alt="Eric" class="w-full h-full object-cover object-[50%_5%] transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-barca-blue/90 via-transparent to-transparent flex flex-col justify-end p-6">
+              <span class="text-barca-gold font-bold text-7xl opacity-80 absolute top-4 right-4 italic">24</span>
+              <h3 class="text-white text-3xl font-black uppercase italic translate-y-2 group-hover:translate-y-0 transition-transform">ERIC</h3>
+              <p class="text-gray-300 font-bold text-sm mb-4">DEFENSA</p>
+            </div>
+          </div>
+
+          <div class="group relative h-[450px] rounded-2xl overflow-hidden cursor-pointer shadow-xl bg-gray-100">
+            <img src="/joan.jpeg" alt="Joan" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-barca-grana/90 via-transparent to-transparent flex flex-col justify-end p-6">
+              <span class="text-barca-gold font-bold text-7xl opacity-80 absolute top-4 right-4 italic">13</span>
+              <h3 class="text-white text-3xl font-black uppercase italic translate-y-2 group-hover:translate-y-0 transition-transform">JOAN GARCIA</h3>
+              <p class="text-gray-300 font-bold text-sm mb-4">PORTERO</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-barca-purple text-white py-24 px-4 overflow-hidden relative">
+      
+      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-barca-gold/20 rounded-full blur-[120px] -z-0"></div>
+
+      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 relative z-10">
+        
+        <div class="lg:w-1/2">
+          <span class="text-barca-gold font-bold tracking-widest uppercase border-b border-barca-gold pb-1">Nueva Equipación 25/26</span>
+          <h2 class="text-5xl md:text-7xl font-black mt-6 mb-6 leading-tight">
+            THE MAMBA <br> 
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-barca-gold to-yellow-100">COLLECTION</span>
+          </h2>
+          <p class="text-purple-200 text-lg mb-8 leading-relaxed">
+            Elegancia y respeto. La nueva segunda equipación rinde tributo a las leyendas con un diseño exclusivo en púrpura y oro.
+          </p>
+          <button class="bg-barca-gold text-barca-purple px-10 py-4 rounded-lg font-black text-xl hover:bg-white hover:shadow-[0_0_30px_rgba(237,187,0,0.6)] transition-all transform hover:-translate-y-1">
+            Comprar Ahora
+          </button>
+        </div>
+        
+        <div class="lg:w-1/2 flex justify-center">
+            <div class="bg-white p-8 rounded-3xl shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 max-w-sm">
+                <img src="/mamba.jpeg" alt="Camiseta Away" class="w-full h-auto drop-shadow-md">
+                
+                <div class="flex justify-between items-end mt-4 border-t pt-4">
+                    <div>
+                        <p class="text-xs text-gray-500 font-bold uppercase tracking-wider">Nike Authentic</p>
+                        <p class="text-2xl font-black text-gray-900">149,99€</p>
+                    </div>
+                    <div class="w-10 h-10 bg-barca-blue rounded-full flex items-center justify-center text-white font-bold cursor-pointer hover:bg-barca-dark transition-colors">
+                        +
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-black text-barca-dark mb-4">El Templo del Fútbol</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto mb-12 text-lg">El nuevo Spotify Camp Nou ya es una realidad.</p>
+
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl group h-[500px]">
+            <img src="/espai.jpeg" alt="Camp Nou" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
+            
+            <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm">
+                <h3 class="text-white text-4xl font-bold mb-6">Apertura Oficial 2026</h3>
+                <button class="border-2 border-barca-gold text-barca-gold px-8 py-3 rounded-full font-bold hover:bg-barca-gold hover:text-barca-dark transition-colors">
+                    Ver Tour Virtual
+                </button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 px-4 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-end mb-10 border-b pb-4">
+            <h2 class="text-4xl font-black text-barca-dark">Actualidad</h2>
+            <a href="#" class="text-barca-grana font-bold hover:underline hidden md:block">Ver todo en Barça One -></a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow border border-gray-100">
+                <div class="h-48 overflow-hidden">
+                   <img src="/flick.jpeg" class="w-full h-full object-cover object-[50%_35%] hover:scale-105 transition-transform">
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-black text-barca-grana uppercase tracking-wider">Primer Equipo</span>
+                    <h3 class="font-bold text-xl mt-2 mb-3 leading-tight text-gray-800">Hansi Flick: "El objetivo es ganar la Champions en casa"</h3>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow border border-gray-100">
+                <div class="h-48 overflow-hidden">
+                   <img src="/masia.jpeg" class="w-full h-full object-cover hover:scale-105 transition-transform">
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-black text-barca-blue uppercase tracking-wider">La Masia</span>
+                    <h3 class="font-bold text-xl mt-2 mb-3 leading-tight text-gray-800">Los 3 juveniles que debutarán este domingo</h3>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow border border-gray-100">
+                <div class="h-48 overflow-hidden">
+                   <img src="/aitana.jpeg" class="w-full h-full object-cover object-[50%_10%] hover:scale-105 transition-transform">
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-black text-barca-purple uppercase tracking-wider">Femení</span>
+                    <h3 class="font-bold text-xl mt-2 mb-3 leading-tight text-gray-800">Aitana Bonmatí presenta su nuevo documental</h3>
+                </div>
+            </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-barca-dark text-white pt-16 pb-8 border-t-4 border-barca-grana">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div>
+                <h4 class="font-bold text-barca-gold mb-6 text-lg">MÉS QUE UN CLUB</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  Página oficial del FC Barcelona para la temporada 2025/2026. Todos los derechos reservados.
+                </p>
+            </div>
+            
+            <div>
+                <h4 class="font-bold text-white mb-6">SECCIONES</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-barca-gold transition-colors">Entradas</a></li>
+                    <li><a href="#" class="hover:text-barca-gold transition-colors">Tienda Oficial</a></li>
+                    <li><a href="#" class="hover:text-barca-gold transition-colors">Barça One</a></li>
+                    <li><a href="#" class="hover:text-barca-gold transition-colors">Socios</a></li>
+                </ul>
+            </div>
+
+             <div class="col-span-1 md:col-span-2 flex flex-col items-center md:items-end justify-center">
+                <p class="text-xs text-gray-500 mb-4 tracking-widest">MAIN PARTNERS</p>
+                <div class="flex gap-8 text-3xl opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer">
+                    <span class="font-black italic">NIKE</span>
+                    <span class="font-bold">Spotify</span>
+                    <span class="font-medium">AMBILIGHT</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center text-gray-600 text-xs pt-8 border-t border-gray-800">
+            &copy; 2026 FC Barcelona. Práctica académica DIW.
+        </div>
+    </footer>
+
+  </body>
+</html>
